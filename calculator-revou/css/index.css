@@ -1,13 +1,15 @@
-/*CSS */
+/* CSS */
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
+
 /*This Body*/
 body{
     padding: 0 20px;
 }
+
 /*This Tittle*/
 .title{
     margin-top: 20px;
@@ -17,6 +19,8 @@ body{
     margin: 10px 0px;
     text-align: center;
 }
+
+/*This Header*/
 .menu{
     display: flex;
     flex-direction: column;
@@ -37,4 +41,11 @@ body{
 .card{
     border: 2px blue solid;
     padding: 20px;
+}
+.form-triangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
