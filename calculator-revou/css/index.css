@@ -35,15 +35,16 @@ body{
     background-color: blue;
     color: white;
     padding:15px 0px;
-    width: 76%;
+    width: 80%;
     text-align: center;
     border-radius: 4px;
 }
 .menu-parallelogram{
     text-decoration: none;
     background-color: hsl(0, 0%, 96%);
+    color: black;
     padding:15px 0px;
-    width: 76%;
+    width: 80%;
     text-align: center;
     border-radius: 4px;
     margin-top: 5px;
@@ -58,7 +59,7 @@ body{
     padding-bottom: 30px;
     padding-top: 20px;
     position: relative;
-    left: 164px;
+    left: 156px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 10px 13px 9px -5px rgba(0,0,0,0.29);;
@@ -72,10 +73,16 @@ body{
     padding-right: 150px;
     gap: 10px;
 }
+.formula{
+    padding-top: 10px;
+}
+.information{
+    padding-top: 10px;
+}
 input{
-    padding-top: 2px;
+    padding-top: 4px;
     font-size: 4mm;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     border-radius: 4px;
     border-style: outset;
 }
@@ -83,13 +90,19 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 170px;
-    padding-right: 170px;
+    padding-left: 230px;
+    padding-right: 230px;
     padding-top: 2px;
 }
+.sub [type="submit"]{
+    cursor: pointer;
+}
+.sub [type="submit"]:hover{
+    background-color: rgb(46, 212, 46);
+}
 button{
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-radius: 4px;
     border-style: outset;
 }
