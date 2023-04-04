@@ -7,6 +7,7 @@
     <link rel="icon" href="calculator-revou/assets/logo.png">
     <title>Calculator-RevoU</title>
     <link rel="stylesheet" href="calculator-revou/css/index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <!-- This Tittle-->
@@ -21,8 +22,16 @@
     <header>
         <nav>
             <div class="menu">
-                <a href="#" class="menu-triangle">Segitiga</a>
-                <a href="#" class="menu-parallelogram">Jajargenjang</a>
+                <button class="menu-triangle">Segitiga</button>
+                <div class="dropdown-childtriangle">
+                    <a href="#triangle">luas</a>
+                    <a href="#triangle2">Keliling</a>
+                </div>
+                <button class="menu-parallelogram">Jajargenjang</button>
+                <div class="dropdown-childparallelogram">
+                    <a href="#parallelogram">luas</a>
+                    <a href="#parallelogram2">Keliling</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -33,7 +42,7 @@
                 <div>
                     <h2>Luas Segitiga</h2>
                 </div>
-                <img src="" alt="">
+                <img src="calculator-revou/assets/segitiga.png" height="200" width="200" style="display:block; margin:auto;">
                 <div class="formula">
                     <h4>Rumus Luas</h4>
                     <p>L = 1/2 x a x t</p>
@@ -49,10 +58,13 @@
                     <br>
                     <form action="" class="form-triangle">
                         <p>Masukan Panjang Alas</p>
-                        <input type="number">
+                        <input type="number" id="baselength">
                         <p>Masukan Tinggi</p>
-                        <input type="number">
-                        <div class="sub"><button type="submit">Hitung</button></div>
+                        <input type="number" id="tall">
+                        <div class="sub"><button type="submit" id="count" onclick="calculatewide()">Hitung</button></div>
+                        <div id="result1"></div>
+                        <div id="result2"></div>
+                        <div id="result3"></div>
                     </form>
                 </div>
             </div>
@@ -62,26 +74,31 @@
                 <div>
                     <h2>Keliling Segitiga</h2>
                 </div>
-                <img src="" alt="">
+                <img src="calculator-revou/assets/segitiga.png" height="200" width="200" style="display:block; margin:auto;">
                 <div class="formula">
-                    <h4>Rumus Luas</h4>
-                    <p>L = 1/2 x a x t</p>
+                    <h4>Rumus Keliling</h4>
+                    <p>K = a + b + c</p>
                 </div>
                 <div class="information" >
                     <p>Di mana</p>
-                    <p>L = Luas</p>
-                    <p>a = Panjang Alas</p>
-                    <p>t = Tinggi</p>
+                    <p>a = Sisi a</p>
+                    <p>b = Sisi b</p>
+                    <p>c = Sisi c</p>
                 </div>
                 <div class="form-hitung">
                     <h1>Hitung Keliling Segitiga</h1>
                     <br>
                     <form action="" class="form-triangle">
-                        <p>Masukan Panjang Alas</p>
-                        <input type="number">
-                        <p>Masukan Tinggi</p>
-                        <input type="number">
-                        <div class="sub"><button type="submit">Hitung</button></div>
+                        <p>Masukan Sisi a</p>
+                        <input type="number" id="sidea">
+                        <p>Masukan Sisi b</p>
+                        <input type="number" id="sideb">
+                        <p>Masukan Sisi c</p>
+                        <input type="number" id="sidec">
+                        <div class="sub"><button type="submit" id="count1" onclick="calculatearound()">Hitung</button></div>
+                        <div id="result11"></div>
+                        <div id="result12"></div>
+                        <div id="result13"></div>
                     </form>
                 </div>
             </div>
@@ -151,4 +168,5 @@
         Copyright 2023
     </footer>
 </body>
+<script src="./calculator-revou/js/index.js"></script>
 </html>
