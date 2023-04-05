@@ -13,20 +13,22 @@
     <!-- This Tittle-->
     <h1 class="title">Welcome To Solcal!</h1>
     <p class="opener">
-        Hai Sobat, Selamat datang di solcal(solution calculator) 
+        Hai guys, Selamat datang di solcal(solution calculator), solcal 
         merupakan sebuah web
-        apps sederhana yang berfungsi untuk  menghitung 
-        nilai luas dan keliling bangun datar
+        apps sederhana yang berfungsi untuk menghitung 
+        nilai luas serta keliling bangun datar segitiga dan jajargenjang
     </p>
     <!-- This Header / Navbar -->
     <header>
         <nav>
-            <div class="menu">
+            <div class="menu1">
                 <button class="menu-triangle">Segitiga</button>
                 <div class="dropdown-childtriangle">
                     <a href="#triangle">luas</a>
                     <a href="#triangle2">Keliling</a>
                 </div>
+            </div>
+            <div class="menu2">
                 <button class="menu-parallelogram">Jajargenjang</button>
                 <div class="dropdown-childparallelogram">
                     <a href="#parallelogram">luas</a>
@@ -62,9 +64,9 @@
                         <p>Masukan Tinggi</p>
                         <input type="number" id="tall">
                         <div class="sub"><button type="submit" id="count" onclick="calculatewide()">Hitung</button></div>
-                        <div id="result1"></div>
-                        <div id="result2"></div>
-                        <div id="result3"></div>
+                        <div id="resultwide1"></div>
+                        <div id="resultwide2"></div>
+                        <div id="resultwide3"></div>
                     </form>
                 </div>
             </div>
@@ -96,9 +98,9 @@
                         <p>Masukan Sisi c</p>
                         <input type="number" id="sidec">
                         <div class="sub"><button type="submit" id="count1" onclick="calculatearound()">Hitung</button></div>
-                        <div id="result11"></div>
-                        <div id="result12"></div>
-                        <div id="result13"></div>
+                        <div id="resultaround1"></div>
+                        <div id="resultaround2"></div>
+                        <div id="resultaround3"></div>
                     </form>
                 </div>
             </div>
@@ -111,23 +113,26 @@
                 <img src="" alt="">
                 <div>
                     <h4>Rumus Luas</h4>
-                    <p class="formula">L = 1/2 x a x t</p>
+                    <p class="formula">L = a x t</p>
                 </div>
-                <div>
-                    <p class="information">Di mana</p>
-                    <p class="information">L = Luas</p>
-                    <p class="information">a = Panjang Alas</p>
-                    <p class="information">t = Tinggi</p>
+                <div class="information">
+                    <p>Di mana</p>
+                    <p>L = Luas</p>
+                    <p>a = Alas</p>
+                    <p>t = Tinggi</p>
                 </div>
                 <div class="form-hitung">
                     <h1>Hitung Luas Jajargenjang</h1>
                     <br>
                     <form action="" class="form-triangle">
                         <p class="name-requests">Masukan Panjang Alas</p>
-                        <input type="number">
+                        <input type="number" id="baseparallelogram">
                         <p class="name-requests">Masukan Tinggi</p>
-                        <input type="number">
-                        <div class="sub"><button type="submit">Hitung</button></div>
+                        <input type="number" id="tallparallelogram">
+                        <div class="sub"><button type="submit" id="count2" onclick="calculatewideparallelogram()">Hitung</button></div>
+                        <div id="resultwideparallelogram1"></div>
+                        <div id="resultwideparallelogram2"></div>
+                        <div id="resultwideparallelogram3"></div>
                     </form>
                 </div>
             </div>
@@ -140,7 +145,7 @@
                 <img src="" alt="">
                 <div class="formula">
                     <h4>Rumus Luas</h4>
-                    <p>L = 1/2 x a x t</p>
+                    <p>L = 2 x (a + t)</p>
                 </div>
                 <div class="information" >
                     <p>Di mana</p>
@@ -153,10 +158,13 @@
                     <br>
                     <form action="" class="form-triangle">
                         <p>Masukan Panjang Alas</p>
-                        <input type="number">
+                        <input type="number" id="baseparallelogram1">
                         <p>Masukan Tinggi</p>
-                        <input type="number">
-                        <div class="sub"><button type="submit">Hitung</button></div>
+                        <input type="number" id="sisibparallelogram">
+                        <div class="sub"><button type="submit" id="count3" onclick="calculatearoundparallelogram()">Hitung</button></div>
+                        <div id="resultaroundparallelogram1"></div>
+                        <div id="resultaroundparallelogram2"></div>
+                        <div id="resultaroundparallelogram3"></div>
                     </form>
                 </div>
             </div>
@@ -165,7 +173,7 @@
     <!-- This Footer -->
     <footer>
         <br>
-        Copyright 2023
+        Copyright Nur Rozaqi Umam 2023
     </footer>
 </body>
 <script src="./calculator-revou/js/index.js"></script>

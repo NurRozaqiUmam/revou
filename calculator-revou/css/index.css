@@ -23,12 +23,20 @@ body{
 }
 
 /*This Header*/
-.menu{
+.menu1{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.menu > a{
+.menu2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu1 > a{
+    text-decoration: none;
+}
+.menu2 > a{
     text-decoration: none;
 }
 /* triangle */
@@ -47,8 +55,8 @@ body{
     display: block;
     text-align: center;
 }
-.menu:hover .dropdown-childtriangle {
-    display: inline-block;
+.menu1:hover .dropdown-childtriangle {
+    display: block;
 }
 .menu-triangle:hover {
     background-color: blue;
@@ -67,11 +75,10 @@ body{
 /* parallelogram */
 .dropdown-childparallelogram {
     display: none;
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsl(0, 0%, 79%);
     width: 70%;
     border-radius: 4px;
     margin-top: 4px;
-    
 }
 .dropdown-childparallelogram a {
     color: black;
@@ -80,15 +87,15 @@ body{
     display: block;
     text-align: center;
 }
-.menu:hover .dropdown-childparallelogram {
+.menu2:hover .dropdown-childparallelogram {
     display: block;
 }
 .menu-parallelogram:hover {
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsl(0, 0%, 79%);
     }
 .menu-parallelogram{
     text-decoration: none;
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsl(0, 0%, 79%);
     color: black;
     padding:15px 0px;
     width: 80%;
