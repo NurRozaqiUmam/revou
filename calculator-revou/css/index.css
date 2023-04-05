@@ -10,6 +10,7 @@
 body{
     padding: 0 20px;
     scroll-behavior: smooth;
+    background-color: rgb(144, 226, 247);
 }
 
 /*This Tittle*/
@@ -42,7 +43,7 @@ body{
 /* triangle */
 .dropdown-childtriangle {
     display: none;
-    background-color: blue;
+    background-color: rgb(103, 103, 243);
     width: 70%;
     border-radius: 4px;
     margin-top: 4px;
@@ -59,11 +60,11 @@ body{
     display: block;
 }
 .menu-triangle:hover {
-    background-color: blue;
+    background-color: rgb(103, 103, 243);
     }
 .menu-triangle{
     text-decoration: none;
-    background-color: blue;
+    background-color: rgb(103, 103, 243);
     color: white;
     padding:15px 0px;
     width: 80%;
@@ -154,7 +155,7 @@ input{
     cursor: pointer;
 }
 .sub [type="submit"]:hover{
-    background-color: rgb(46, 212, 46);
+    background-color: rgb(120, 250, 120);
 }
 button{
     padding-top: 6px;
