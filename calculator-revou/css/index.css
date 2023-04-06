@@ -40,7 +40,7 @@ body{
 .menu2 > a{
     text-decoration: none;
 }
-/* triangle */
+/* Header(triangle) */
 .dropdown-childtriangle {
     display: none;
     background-color: rgb(103, 103, 243);
@@ -73,7 +73,7 @@ body{
     cursor: pointer;
     border: none;
 }
-/* parallelogram */
+/* Header(parallelogram) */
 .dropdown-childparallelogram {
     display: none;
     background-color: hsl(0, 0%, 83%);
