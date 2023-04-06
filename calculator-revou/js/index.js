@@ -66,10 +66,10 @@ function calculatearoundparallelogram(){
     count3.addEventListener('click', function(){
         let a = baseparallelogram1.value
         let b = sisibparallelogram.value
-        let l = 2*(Number(a) + Number(b))
+        let k = 2*(Number(a) + Number(b))
         resultaroundparallelogram1.innerHTML = `L = a x t`
         resultaroundparallelogram2.innerHTML = `L = 2 x (${a} cm + ${b} cm)`
-        resultaroundparallelogram3.innerHTML = `L = ${l} cm`
+        resultaroundparallelogram3.innerHTML = `L = ${k} cm`
     })
 
 }

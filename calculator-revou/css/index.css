@@ -44,7 +44,7 @@ body{
 .dropdown-childtriangle {
     display: none;
     background-color: rgb(103, 103, 243);
-    width: 70%;
+    width: 25%;
     border-radius: 4px;
     margin-top: 4px;
     
@@ -54,7 +54,7 @@ body{
     padding: 20px;
     text-decoration: none;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 .menu1:hover .dropdown-childtriangle {
     display: block;
@@ -76,8 +76,8 @@ body{
 /* parallelogram */
 .dropdown-childparallelogram {
     display: none;
-    background-color: hsl(0, 0%, 79%);
-    width: 70%;
+    background-color: hsl(0, 0%, 83%);
+    width: 25%;
     border-radius: 4px;
     margin-top: 4px;
 }
@@ -86,17 +86,17 @@ body{
     padding: 20px;
     text-decoration: none;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 .menu2:hover .dropdown-childparallelogram {
     display: block;
 }
 .menu-parallelogram:hover {
-    background-color: hsl(0, 0%, 79%);
+    background-color: hsl(0, 0%, 83%);
     }
 .menu-parallelogram{
     text-decoration: none;
-    background-color: hsl(0, 0%, 79%);
+    background-color: hsl(0, 0%, 83%);
     color: black;
     padding:15px 0px;
     width: 80%;
